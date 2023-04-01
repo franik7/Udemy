@@ -17,7 +17,7 @@ function isValidPassword(password, username){
 		return false
 	} return true
 	} 
-	
+
 	isValidPassword("password","username")
 	
 
@@ -35,6 +35,7 @@ function findAverage(arr){
 	average = total / arr.length
 	console.log(average)
 }
+
 findAverage([1,2,3,4])
 
 
