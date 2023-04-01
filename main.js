@@ -68,3 +68,23 @@ console.log(isPangram('The five boxing wizards jump quickly'))
 //Pick a random suit from:
 //----clubs,spades, hearts, diamonds
 //Return both in an object
+
+function getCard(){
+	const values = ["1","2","3","4","5","6","7","8","9","10","J","Q","K","A"]
+	const randomValue = values[Math.floor(Math.random() * values.length)];
+
+	const suit = ["clubs","spades", "hearts", "diamonds"]
+	const randomSuit = suit[Math.floor(Math.random() * suit.length)];
+
+	// console.log(randomValue)
+	// console.log(randomSuit)
+
+	let newObject = [];
+
+	newObject.push(randomValue);
+	newObject.push(randomSuit);
+
+	console.log(newObject)
+}
+
+getCard()
