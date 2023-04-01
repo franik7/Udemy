@@ -73,7 +73,7 @@ function getCard(){
 	const values = ["1","2","3","4","5","6","7","8","9","10","J","Q","K","A"]
 	const randomValue = values[Math.floor(Math.random() * values.length)];
 
-	const suit = ["clubs","spades", "hearts", "diamonds"]
+	const suit = ["clubs", "spades", "hearts", "diamonds"]
 	const randomSuit = suit[Math.floor(Math.random() * suit.length)];
 
 	// console.log(randomValue)
@@ -84,7 +84,7 @@ function getCard(){
 	newObject.push(randomValue);
 	newObject.push(randomSuit);
 
-	console.log(newObject)
+	console.log({value: randomValue, suit: randomSuit})
 }
 
 getCard()
