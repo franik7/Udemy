@@ -103,3 +103,18 @@ function doubleArr(arr){
 	console.log(result)
 }
 doubleArr([1,2,3])
+
+
+// functions as arguments
+
+function triple(x){
+	x()
+	x()
+	x()
+}
+
+function greet(){
+		console.log("Hello")
+}
+
+triple(greet)
