@@ -89,3 +89,17 @@ function getCard(){
 }
 
 getCard()
+
+
+
+// write a function that will double an array
+
+function doubleArr(arr){
+	const result = []
+	for (let element of arr){
+		let double = element * 2
+		result.push(double)
+	}
+	console.log(result)
+}
+doubleArr([1,2,3])
