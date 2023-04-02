@@ -184,6 +184,13 @@ const square = function(v){
 	return v * v
 }
 
-const square1 = (a) = {
+const square1 = (a) => {
 	return a * a
 }
+
+const square2 = h => h*h;
+
+
+const doubles2 = numeros.map(k => k * 4)
+
+const parityList = numeros.map((l) => l % 2 === 0 ? 'even' : 'odd')
