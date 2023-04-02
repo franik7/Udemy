@@ -118,3 +118,72 @@ function greet(){
 }
 
 triple(greet)
+
+
+// JS Methods
+
+const numbers = [2,3,4,5,6,7,8]
+
+numbers.forEach(function(num){
+console.log(num * 2)
+})
+
+function printTriple(n){
+console.log(n*3)
+}
+
+numbers.forEach(printTriple)
+
+numbers.forEach(function(x){
+console.log(x*10)
+})
+
+const books = [{
+	title: "1984",
+	autohor: "George Orwell"
+},
+{
+	title: "Belarus",
+	autohor: "Yanka Kupala"
+}]
+
+for (let i of books){
+	console.log(i.title)
+}
+
+
+// JS Map Methods, extract portions, reverse array, modify array
+
+const numeros = [2,3,4,5,6,7,8] 
+const words = ['asap', 'byob', 'diy']
+
+const doubles = numeros.map(function (numero){
+  return numero * 2
+})
+
+const numDetail =numeros.map(function(g){
+	return {
+		value: g,
+		isEven: g % 2 ===0
+	}
+})
+
+
+const abbrevs = words.map(function(word){
+	return word.toUpperCase().split('').join('.')
+})
+
+const titlesAbbrevs = books.map(function (b){
+	return b.title
+})
+
+
+// arrow functions
+
+const square = function(v){
+	return v * v
+}
+
+const square1 = (a) = {
+	return a * a
+}
