@@ -194,3 +194,12 @@ const square2 = h => h*h;
 const doubles2 = numeros.map(k => k * 4)
 
 const parityList = numeros.map((l) => l % 2 === 0 ? 'even' : 'odd')
+
+// find Method finds only the first match and returns it
+
+// filter Methods
+
+const oddNums = numeros.filter(r => r % 2 === 1)
+
+const realismGenre = books.filter(t => t.genre.includes("Realism"))
+
