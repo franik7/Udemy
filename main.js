@@ -203,3 +203,35 @@ const oddNums = numeros.filter(r => r % 2 === 1)
 
 const realismGenre = books.filter(t => t.genre.includes("Realism"))
 
+
+
+// every Method, checks if every elements meets certain criteria, either true or false
+// some Method, checks if some elements meet certain criteria, either true or false
+
+
+// sort Method (array.slice() copies the array)
+
+const prices = [2, 56.3, 525.4, 9000, 7500.6]
+
+const sort1 = prices.sort((a, b) => a - b)
+
+books.sort((a,b) => a.rating - b.rating)
+
+// reduce Method
+
+let multiply = numeros.reduce((total, currentValue) => {
+	return total * currentValue
+})
+
+let max = numeros.reduce((max, currentValue) => {
+	if (currentValue > max) {
+		return currentValue
+	} return max
+})
+
+const votes = ['y','y','y','n','y','n','n','y']
+
+const results = votes.reduce((tally, value) => {
+	tally[value] = (tally[value] || 0) + 1
+	return tally
+}, {})
