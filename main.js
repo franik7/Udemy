@@ -234,3 +234,4 @@ const results = votes.reduce((tally, value) => {
 	tally[value] = (tally[value] || 0) + 1
 	return tally
 }, {})
+
