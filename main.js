@@ -204,7 +204,6 @@ const oddNums = numeros.filter(r => r % 2 === 1)
 const realismGenre = books.filter(t => t.genre.includes("Realism"))
 
 
-
 // every Method, checks if every elements meets certain criteria, either true or false
 // some Method, checks if some elements meet certain criteria, either true or false
 
